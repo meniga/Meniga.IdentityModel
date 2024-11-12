@@ -2,6 +2,12 @@
 
 IdentityModel is a .NET library for claims-based identity, OAuth 2.0 and OpenID Connect. 
 
+> [!IMPORTANT]  
+> `IdentityModel` is being rebranded to `Duende.IdentityModel` and henceforth will be managed 
+> in our [FOSS repository](https://github.com/DuendeSoftware/foss) under the same Apache2 licence.
+>  - Please update your nuget package references to the [new package](https://www.nuget.org/packages/Duende.IdentityModel).
+>  - Outstanding pull requests and issues will be ported or closed.
+
 It provides an object model to interact with the endpoints defined in the various OAuth
 and OpenId Connect specifications in the form of:
 - types to represent the requests and responses
