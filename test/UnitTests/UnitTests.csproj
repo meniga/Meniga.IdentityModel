@@ -3,14 +3,7 @@
     <IsPackable>false</IsPackable>
 	  <AssemblyOriginatorKeyFile>../../key.snk</AssemblyOriginatorKeyFile>
 	  <SignAssembly>true</SignAssembly>
-  </PropertyGroup>
-
-  <!--Conditional compilation-->
-  <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' ">
-    <TargetFrameworks>net461;net472;netcoreapp2.1;netcoreapp3.1;net5.0</TargetFrameworks>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' ">
-    <TargetFrameworks>netcoreapp3.1;net5.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
   </PropertyGroup>
   
   <ItemGroup>
@@ -31,22 +24,6 @@
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.1' ">
-    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.1.0" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1' ">
-    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
-  </ItemGroup>
-
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net5.0' ">
-    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
-  </ItemGroup>
-    
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' or $(TargetFramework) == 'net472'">
-    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
-    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="8.0.16" />
   </ItemGroup>
 </Project>
