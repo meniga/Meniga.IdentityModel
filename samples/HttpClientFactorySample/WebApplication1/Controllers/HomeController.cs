@@ -1,6 +1,6 @@
 ﻿using System.Net.Http;
 using System.Threading.Tasks;
-using IdentityModel.Client;
+using Meniga.IdentityModel.Client;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1.Controllers

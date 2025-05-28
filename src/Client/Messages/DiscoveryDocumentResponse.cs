@@ -1,8 +1,8 @@
 ﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
-using IdentityModel.Internal;
-using IdentityModel.Jwk;
+using Meniga.IdentityModel.Internal;
+using Meniga.IdentityModel.Jwk;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 #pragma warning disable 1591
 
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// Models the response from an OpenID Connect discovery endpoint

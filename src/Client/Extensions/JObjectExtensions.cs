@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// Extensions for JObject

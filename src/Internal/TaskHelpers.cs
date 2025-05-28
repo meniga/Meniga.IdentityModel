@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using System.Runtime.CompilerServices;
 
-namespace IdentityModel.Internal
+namespace Meniga.IdentityModel.Internal
 {
     /// <summary>
     /// Helpers to deal with tasks.

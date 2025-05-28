@@ -3,7 +3,7 @@
 
 using System.Diagnostics;
 
-namespace IdentityModel.Internal
+namespace Meniga.IdentityModel.Internal
 {
     internal static class InternalStringExtensions
     {

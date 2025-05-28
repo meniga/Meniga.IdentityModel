@@ -1,4 +1,4 @@
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// Models a client assertion

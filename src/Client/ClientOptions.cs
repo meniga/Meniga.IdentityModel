@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// Options for TokenClient

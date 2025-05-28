@@ -1,7 +1,7 @@
 ﻿
 using System.Collections.Generic;
 
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// Authority validation strategy.

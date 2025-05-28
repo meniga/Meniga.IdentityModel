@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Net;
-using IdentityModel.Client;
+using Meniga.IdentityModel.Client;
 
-namespace IdentityModel.UnitTests
+namespace Meniga.IdentityModel.UnitTests
 {
     public abstract class DiscoveryPolicyTestsBase
     {

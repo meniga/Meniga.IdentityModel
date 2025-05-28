@@ -3,10 +3,10 @@
 
 using System;
 using FluentAssertions;
-using IdentityModel.Client;
+using Meniga.IdentityModel.Client;
 using Xunit;
 
-namespace IdentityModel.UnitTests
+namespace Meniga.IdentityModel.UnitTests
 {
     public class DiscoveryPolicyTests_WithoutAuthorityValidation
     {

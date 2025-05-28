@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace IdentityModel.UnitTests
+namespace Meniga.IdentityModel.UnitTests
 {
     public class NetworkHandler : HttpMessageHandler
     {

@@ -7,7 +7,7 @@ using System.Net.Http;
 using System.Text;
 using Xunit;
 
-namespace IdentityModel.UnitTests
+namespace Meniga.IdentityModel.UnitTests
 {
     public class BasicAuthenticationEncodingTests
     {

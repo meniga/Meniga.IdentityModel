@@ -1,10 +1,10 @@
 ﻿using FluentAssertions;
-using IdentityModel.Internal;
+using Meniga.IdentityModel.Internal;
 using System;
 using System.Collections.Generic;
 using Xunit;
 
-namespace IdentityModel.UnitTests
+namespace Meniga.IdentityModel.UnitTests
 {
     public class DictionaryExtensionsTests
     {

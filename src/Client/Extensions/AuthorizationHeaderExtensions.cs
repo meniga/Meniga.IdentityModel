@@ -4,7 +4,7 @@
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// Extensions for HttpRequestMessage

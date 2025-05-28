@@ -3,7 +3,7 @@
 
 using System;
 
-namespace IdentityModel
+namespace Meniga.IdentityModel
 {
     /// <summary>
     /// Extensions for converting epoch/unix time to DateTime and DateTimeOffset

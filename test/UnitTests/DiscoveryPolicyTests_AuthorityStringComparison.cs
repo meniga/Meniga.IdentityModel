@@ -5,10 +5,10 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using FluentAssertions;
-using IdentityModel.Client;
+using Meniga.IdentityModel.Client;
 using Xunit;
 
-namespace IdentityModel.UnitTests
+namespace Meniga.IdentityModel.UnitTests
 {
     public class DiscoveryPolicyTests_AuthorityStringComparison : DiscoveryPolicyTestsBase
     {

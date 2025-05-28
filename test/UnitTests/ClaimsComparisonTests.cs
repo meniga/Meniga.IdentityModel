@@ -7,7 +7,7 @@ using System.Linq;
 using System.Security.Claims;
 using Xunit;
 
-namespace IdentityModel.UnitTests
+namespace Meniga.IdentityModel.UnitTests
 {
     public class ClaimComparisonTests
     {

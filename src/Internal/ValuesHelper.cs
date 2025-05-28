@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Reflection;
 
-namespace IdentityModel.Internal
+namespace Meniga.IdentityModel.Internal
 {
     /// <summary>
     /// Helpers to deal with key/value pairs

@@ -1,8 +1,8 @@
-﻿using IdentityModel.Internal;
+﻿using Meniga.IdentityModel.Internal;
 using System;
 using System.Collections.Generic;
 
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// <para>Implementation of <see cref="IAuthorityValidationStrategy"/> based on <see cref="Uri"/> equality.

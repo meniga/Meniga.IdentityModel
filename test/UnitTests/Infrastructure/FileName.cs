@@ -3,7 +3,7 @@
 
 using System.IO;
 
-namespace IdentityModel.UnitTests
+namespace Meniga.IdentityModel.UnitTests
 {
     static class FileName
     {

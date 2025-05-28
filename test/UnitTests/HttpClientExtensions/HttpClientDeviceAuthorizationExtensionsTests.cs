@@ -2,7 +2,7 @@
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
 using FluentAssertions;
-using IdentityModel.Client;
+using Meniga.IdentityModel.Client;
 using Microsoft.AspNetCore.WebUtilities;
 using Newtonsoft.Json;
 using System;
@@ -13,7 +13,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace IdentityModel.UnitTests
+namespace Meniga.IdentityModel.UnitTests
 {
     public class HttpClientDeviceAuthorizationExtensionsTests
     {

@@ -1,7 +1,7 @@
-﻿using IdentityModel.Internal;
+﻿using Meniga.IdentityModel.Internal;
 using System;
 
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// Represents a URL to a discovery endpoint - parsed to separate the URL and authority

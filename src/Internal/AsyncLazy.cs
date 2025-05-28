@@ -4,7 +4,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace IdentityModel.Internal
+namespace Meniga.IdentityModel.Internal
 {
     class AsyncLazy<T> : Lazy<Task<T>>
     {

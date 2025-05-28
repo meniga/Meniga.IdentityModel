@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace IdentityModel
+namespace Meniga.IdentityModel
 {
     public static class OidcConstants
     {

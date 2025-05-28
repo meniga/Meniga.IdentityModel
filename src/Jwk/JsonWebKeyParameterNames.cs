@@ -25,7 +25,7 @@
 //
 //------------------------------------------------------------------------------
 
-namespace IdentityModel.Jwk
+namespace Meniga.IdentityModel.Jwk
 {
     /// <summary>
     /// Names for Json Web Key Values

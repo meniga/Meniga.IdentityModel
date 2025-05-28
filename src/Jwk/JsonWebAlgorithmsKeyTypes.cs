@@ -25,7 +25,7 @@
 //
 //------------------------------------------------------------------------------
 
-namespace IdentityModel.Jwk
+namespace Meniga.IdentityModel.Jwk
 {
     /// <summary>
     /// Constants for JsonWebAlgorithms  "kty" Key Type (sec 6.1)

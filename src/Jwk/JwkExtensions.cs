@@ -5,7 +5,7 @@
 using Newtonsoft.Json;
 using System.Text;
 
-namespace IdentityModel.Jwk
+namespace Meniga.IdentityModel.Jwk
 {
     /// <summary>
     /// Extensions for JsonWebKey

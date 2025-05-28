@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// Security policy for retrieving a discovery document

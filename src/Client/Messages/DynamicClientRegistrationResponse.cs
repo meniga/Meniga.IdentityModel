@@ -3,7 +3,7 @@
 
 #pragma warning disable 1591
 
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// Models an OpenID Connect dynamic client registration response

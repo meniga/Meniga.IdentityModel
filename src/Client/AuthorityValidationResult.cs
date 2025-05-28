@@ -1,7 +1,7 @@
 ﻿using System;
 
 #pragma warning disable 1591
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     public struct AuthorityValidationResult
     {

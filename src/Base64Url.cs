@@ -3,7 +3,7 @@
 
 using System;
 
-namespace IdentityModel
+namespace Meniga.IdentityModel
 {
     /// <summary>
     /// Base64Url encoder/decoder

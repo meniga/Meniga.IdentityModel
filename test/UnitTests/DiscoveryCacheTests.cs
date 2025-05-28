@@ -1,12 +1,12 @@
 ﻿using FluentAssertions;
-using IdentityModel.Client;
+using Meniga.IdentityModel.Client;
 using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace IdentityModel.UnitTests
+namespace Meniga.IdentityModel.UnitTests
 {
     public class DiscoveryCacheTests
     {

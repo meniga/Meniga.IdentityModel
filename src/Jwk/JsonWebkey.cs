@@ -31,7 +31,7 @@ using System;
 
 #pragma warning disable 1591
 
-namespace IdentityModel.Jwk
+namespace Meniga.IdentityModel.Jwk
 {
     /// <summary>
     /// Represents a Json Web Key as defined in http://tools.ietf.org/html/rfc7517.

@@ -3,7 +3,7 @@
 
 using System.Runtime.CompilerServices;
 
-namespace IdentityModel
+namespace Meniga.IdentityModel
 {
     /// <summary>
     /// Helper class to do equality checks without leaking timing information

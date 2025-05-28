@@ -1,14 +1,14 @@
 ﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
-using IdentityModel.Jwk;
+using Meniga.IdentityModel.Jwk;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 
 #pragma warning disable 1591
 
-namespace IdentityModel.Client
+namespace Meniga.IdentityModel.Client
 {
     /// <summary>
     /// Models an OpenID Connect dynamic client registration request
