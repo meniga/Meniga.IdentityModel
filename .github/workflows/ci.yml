@@ -14,12 +14,7 @@ env:
 
 jobs:
   build:
-    strategy:
-      fail-fast: false
-      matrix:
-        runs-on: [ubuntu-latest, windows-latest]
-    name: ${{ matrix.runs-on }}
-    runs-on: ${{ matrix.runs-on }}
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
@@ -27,18 +22,13 @@ jobs:
           fetch-depth: 0
           fetch-tags: true
 
-      - name: Setup dotnet
-        uses: actions/setup-dotnet@v4
+      - uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 8.0.x
 
       - run: dotnet --info
 
-      - if: contains(matrix.runs-on, 'ubuntu')
-        run: ./build.sh
-
-      - if: matrix.runs-on == 'windows-latest' && github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/')
-        run: ./build.cmd
+      - run: ./build.sh
 
       - if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')
         name: Publish nuget
@@ -46,8 +36,7 @@ jobs:
         env:
           NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
 
-      # - if: matrix.runs-on == 'windows-latest' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/'))
-      #   env:
+      # - env:
       #     SignClientSecret: ${{ secrets.SIGNCLIENTSECRET }}
       #   run: |
       #     ./build.cmd sign
