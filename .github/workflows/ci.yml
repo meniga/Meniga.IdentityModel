@@ -1,10 +1,12 @@
+name: "CI"
+
 on:
   push:
     branches:
-    - main
-    - features/**
+      - main
+      - features/**
     tags:
-    - '*.*.*'
+      - '*.*.*'
   pull_request:
 
 env:
@@ -15,34 +17,34 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        runs-on: [macOS-latest, ubuntu-latest, windows-latest]
+        runs-on: [ubuntu-latest, windows-latest]
     name: ${{ matrix.runs-on }}
     runs-on: ${{ matrix.runs-on }}
+
     steps:
-    - uses: actions/checkout@af513c7a016048ae468971c52ed77d9562c7c819
+      - uses: actions/checkout@v4
 
-    - name: Setup dotnet (main)
-      uses: actions/setup-dotnet@v1
-      
-    - name: Setup dotnet (testing netcore3)
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '3.1.x'
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
 
-    - name: Setup dotnet (testing netcore2)
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: '2.1.x'
+      - run: dotnet --info
 
-    - run: dotnet --info
-    
-    - if: contains(matrix.runs-on, 'macOS') || contains(matrix.runs-on, 'ubuntu')
-      run: ./build.sh
-    - if: matrix.runs-on == 'windows-latest' && github.ref != 'refs/heads/main' && !contains(github.ref, 'refs/tags/')
-      run: ./build.cmd
-    - if: (matrix.runs-on == 'windows-latest') && (github.ref == 'refs/heads/main' || contains(github.ref, 'refs/tags/'))
-      env:
-        SignClientSecret: ${{ secrets.SIGNCLIENT }}
-      run: |
-        ./build.cmd sign
-        dotnet nuget push .\artifacts\*.nupkg -s https://www.myget.org/F/identity/api/v2/package -k ${{ secrets.MYGET }}
+      - if: contains(matrix.runs-on, 'ubuntu')
+        run: ./build.sh
+
+      - if: matrix.runs-on == 'windows-latest' && github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/')
+        run: ./build.cmd
+
+      - if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')
+        name: Publish nuget
+        run: dotnet nuget push ./artifacts/*.nupkg --source "https://nuget.pkg.github.com/meniga/index.json" --api-key ${{ secrets.GITHUB_TOKEN }}
+        env:
+          NUGET_PACKAGES: ${{ github.workspace }}/.nuget/packages
+
+      # - if: matrix.runs-on == 'windows-latest' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/'))
+      #   env:
+      #     SignClientSecret: ${{ secrets.SIGNCLIENTSECRET }}
+      #   run: |
+      #     ./build.cmd sign
