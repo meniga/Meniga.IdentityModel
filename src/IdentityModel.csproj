@@ -9,6 +9,8 @@
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <LangVersion>latest</LangVersion>
+    <MinVerTagPrefix>meniga-</MinVerTagPrefix>
+    <MinVerVersion>1.0.0</MinVerVersion> 
   </PropertyGroup>
 
   <ItemGroup>
